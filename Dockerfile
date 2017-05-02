@@ -1,4 +1,5 @@
-FROM ubuntu:16.04
+#FROM ubuntu:16.04
+FROM ubuntu:trusty
 #FROM nimbix/ubuntu-base:trusty
 
 RUN apt-get -y update && \
