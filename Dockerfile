@@ -13,6 +13,7 @@ RUN echo "export VISIBLE=now" >> /etc/profile
 
 RUN mkdir -p /etc/NAE && echo "" >/etc/NAE/AppDef.json
 ADD AppDef.json /etc/NAE/AppDef.json
+ADD test.sh /usr/local/bin/test.sh
 
 EXPOSE 22
 CMD ["/usr/sbin/sshd", "-D"]

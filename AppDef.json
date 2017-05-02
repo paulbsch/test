@@ -47,6 +47,13 @@
                 }
             }
         },
+        "Batch2": {
+            "path": "/usr/local/bin/test.sh",
+            "interactive": false,
+            "name": "Batch2",
+            "description": "Batch2 desc",
+            "parameters": {}
+        },
         "Server": {
             "path": "/sbin/init",
             "interactive": true,
