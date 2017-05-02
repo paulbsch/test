@@ -3,6 +3,7 @@
     "description": "test application",
     "author": "paulbsch",
     "licensed": true,
+    "scale_max": 3,
     "classifications": [
         "Uncategorized"
     ],
