@@ -16,3 +16,5 @@ EXPOSE 22
 ADD AppDef.json /etc/NAE/AppDef.json
 ADD test.sh /usr/local/bin/test.sh
 
+RUN dpkg-divert --rename --remove /sbin/initctl
+
