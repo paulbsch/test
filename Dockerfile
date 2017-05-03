@@ -1,12 +1,12 @@
-#FROM ubuntu:16.04
-FROM ubuntu:trusty
+FROM nimbix/ubuntu-base:xenial
 #FROM nimbix/ubuntu-base:trusty
-
-RUN apt-get -y update && \
-    apt-get -y install curl && \
-    curl -H 'Cache-Control: no-cache' \
-        https://raw.githubusercontent.com/nimbix/image-common/master/install-nimbix.sh \
-        | bash
+#FROM ubuntu:trusty
+#
+#RUN apt-get -y update && \
+#    apt-get -y install curl && \
+#    curl -H 'Cache-Control: no-cache' \
+#        https://raw.githubusercontent.com/nimbix/image-common/master/install-nimbix.sh \
+#        | bash
 
 EXPOSE 22
 
