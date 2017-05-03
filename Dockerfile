@@ -1,4 +1,4 @@
-FROM nimbix/ubuntu-base:trusty
+FROM nimbix/ubuntu-base
 #FROM nimbix/ubuntu-base:xenial
 #FROM ubuntu:trusty
 #
@@ -7,6 +7,9 @@ FROM nimbix/ubuntu-base:trusty
 #    curl -H 'Cache-Control: no-cache' \
 #        https://raw.githubusercontent.com/nimbix/image-common/master/install-nimbix.sh \
 #        | bash
+
+RUN dpkg-divert --local --rename --add /sbin/initctl
+RUN ln -s /bin/true /sbin/initctl
 
 EXPOSE 22
 
