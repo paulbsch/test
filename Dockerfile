@@ -1,5 +1,5 @@
-FROM nimbix/ubuntu-base:xenial
-#FROM nimbix/ubuntu-base:trusty
+FROM nimbix/ubuntu-base:trusty
+#FROM nimbix/ubuntu-base:xenial
 #FROM ubuntu:trusty
 #
 #RUN apt-get -y update && \
