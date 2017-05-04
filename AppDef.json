@@ -55,7 +55,7 @@
             "parameters": {}
         },
         "Server": {
-            "path": "/usr/lib/JARVICE/tools/sbin/init",
+            "path": "/sbin/init",
             "interactive": true,
             "scale_max": 3,
             "name": "Server",
