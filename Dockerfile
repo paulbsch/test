@@ -3,6 +3,8 @@ FROM ubuntu:xenial
 #FROM nimbix/ubuntu-base:xenial
 #FROM ubuntu:trusty
 #
+
+ENV TESTENV teststring
 RUN apt-get -y update && \
     apt-get -y install curl && \
     curl -H 'Cache-Control: no-cache' \

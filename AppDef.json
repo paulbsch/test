@@ -55,7 +55,7 @@
             "parameters": {}
         },
         "Server": {
-            "path": "/sbin/init /usr/local/bin/test.sh",
+            "path": "/sbin/init",
             "interactive": true,
             "scale_max": 3,
             "name": "Server",
