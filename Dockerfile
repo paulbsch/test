@@ -4,11 +4,13 @@ FROM ubuntu:xenial
 #FROM ubuntu:trusty
 #
 
+ENV GIT_BRANCH testing
 ENV TESTENV teststring
+
 RUN apt-get -y update && \
     apt-get -y install curl && \
     curl -H 'Cache-Control: no-cache' \
-        https://raw.githubusercontent.com/paulbsch/image-common/master/install-nimbix.sh \
+        https://raw.githubusercontent.com/nimbix/image-common/$GIT_BRANCH/install-nimbix.sh \
         | bash -s -- --setup-nimbix-desktop --disable-desktop-autostart
 
 #RUN dpkg-divert --local --rename --add /sbin/initctl

@@ -9,7 +9,7 @@ ENV GIT_BRANCH testing
 
 ENV TESTENV teststring
 RUN curl -H 'Cache-Control: no-cache' \
-        https://raw.githubusercontent.com/paulbsch/image-common/$GIT_BRANCH/install-nimbix.sh \
+        https://raw.githubusercontent.com/nimbix/image-common/$GIT_BRANCH/install-nimbix.sh \
         | bash -s -- --setup-nimbix-desktop --image-common-branch $GIT_BRANCH
 
 #RUN dpkg-divert --local --rename --add /sbin/initctl
