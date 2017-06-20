@@ -5,6 +5,8 @@
 FROM ppc64le/centos:7
 #
 
+USER root
+
 ENV GIT_BRANCH testing
 
 ENV TESTENV teststring
