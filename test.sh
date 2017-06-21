@@ -1,20 +1,15 @@
 #!/bin/bash
 
-#sudo service sshd start 2>/dev/null
-#cat /etc/JARVICE/nodes >/data/data/test/$(hostname)
-#for i in `cat /etc/JARVICE/nodes`; do
+set -x
 
-#cat /etc/JARVICE/nodes
-#echo "*******"
-#for i in `tail -n +2 /etc/JARVICE/nodes`; do
-#    echo $i
-#    #ssh -n -f $i "/bin/hostname >/data/data/test/$i"
-#    ssh $i "hostname >/data/data/test/$i"
-#done
+ls -ld /tmp
+ls -l /tmp
 
-#sleep 5
+ETC_HOSTS="$(cat <<EOF
+127.0.0.1   localhost
+::1         localhost ip6-localhost ip6-loopback
+EOF
+)"
 
-while : ; do
-    sleep 10
-done
+echo "$ETC_HOSTS"
 

@@ -1,16 +1,14 @@
-#FROM ubuntu:xenial
-#FROM nimbix/ubuntu-base
-#FROM nimbix/ubuntu-base:xenial
-#FROM ubuntu:trusty
 FROM ppc64le/centos:7
-#
 
 USER root
 
 ENV GIT_BRANCH testing
 
 ENV TESTENV teststring
-RUN ls -ld /tmp && ls -l /tmp
+
+ADD test.sh /tmp/test.sh
+RUN /tmp/test.sh
+
 RUN curl -H 'Cache-Control: no-cache' \
         https://raw.githubusercontent.com/nimbix/image-common/$GIT_BRANCH/install-nimbix.sh \
         | bash -s -- --setup-nimbix-desktop --image-common-branch $GIT_BRANCH
