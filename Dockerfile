@@ -19,6 +19,7 @@ RUN apt-get -y update && \
 EXPOSE 22
 
 ADD AppDef.json /etc/NAE/AppDef.json
+ADD help.html /etc/NAE/help.html
 ADD test.sh /usr/local/bin/test.sh
 RUN chown 666:666 /usr/local/bin/test.sh
 ADD test.tar /usr/local
