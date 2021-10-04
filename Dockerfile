@@ -4,7 +4,7 @@ FROM ubuntu:xenial
 #FROM ubuntu:trusty
 #
 
-ENV GIT_BRANCH testing
+ENV GIT_BRANCH master
 ENV TESTENV teststring
 
 RUN apt-get -y update && \
